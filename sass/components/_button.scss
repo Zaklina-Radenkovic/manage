@@ -1,0 +1,39 @@
+.btn-cta,
+.btn-cta:link,
+.btn-cta:visited {
+  align-self: start;
+  color: $color-light-gray;
+  background: $color-primary;
+  padding: 1.6rem 3.2rem;
+  border: none;
+  box-shadow: 0px 12px 13px -10px $color-primary;
+  font-family: inherit;
+  font-weight: 700;
+  border-radius: 32px;
+  cursor: pointer;
+
+  transition: all 0.2s;
+
+  &:hover {
+    background: lighten($color-primary, 10%);
+    transform: translateY(1px);
+  }
+
+  &--1 {
+    justify-self: center;
+  }
+}
+
+.btn-cta-reversed,
+.btn-cta-reversed:link,
+.btn-cta-reversed:visited {
+  color: $color-primary;
+  background: $color-light-gray;
+  transition: all 0.2s;
+
+  &:hover {
+    background: $color-light-gray;
+    color: lighten($color-primary, 20%);
+    transform: none;
+  }
+}

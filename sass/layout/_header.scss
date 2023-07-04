@@ -1,0 +1,33 @@
+.header {
+  grid-column: center-start / center-end;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__nav {
+    display: flex;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    font-size: 1.4rem;
+  }
+
+  &__list li:not(:last-child) {
+    padding-right: 2.4rem;
+  }
+
+  &__list a,
+  &__list a:link,
+  &__list a:visited {
+    text-decoration: none;
+    color: $color-dark-blue;
+  }
+
+  &__list a:hover,
+  &__list a:active {
+    color: $color-grayish-blue-dark;
+  }
+}

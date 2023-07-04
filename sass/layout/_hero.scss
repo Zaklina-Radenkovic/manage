@@ -1,0 +1,18 @@
+.hero {
+  grid-column: center-start / center-end;
+  padding-top: 10rem;
+
+  @include grid;
+  align-items: center;
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-img {
+    width: 100%;
+    height: auto;
+    transform: translate(0, -30px);
+  }
+}

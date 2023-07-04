@@ -1,0 +1,30 @@
+.cta {
+  grid-column: full-start / full-end;
+
+  background-color: $color-primary;
+  background-image: url(/images/bg-simplify-section-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 0 left 270px;
+  background-size: 90%;
+  padding: 4.5rem 0;
+
+  h2 {
+    padding: 0;
+  }
+
+  &__container {
+    @include grid;
+    gap: 0;
+    margin: 0 16rem;
+  }
+
+  span {
+    color: $color-light-gray;
+    display: block;
+  }
+
+  button {
+    justify-self: end;
+    align-self: center;
+  }
+}

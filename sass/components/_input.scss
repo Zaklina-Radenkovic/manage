@@ -1,0 +1,23 @@
+.email {
+  background-color: $color-light-gray;
+  padding: 1.2rem 1.6rem;
+  color: $color-primary;
+  border: 1px solid $color-light-gray;
+  border-radius: 32rem;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 1rem;
+  }
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-grayish-blue-dark;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $color-grayish-blue-dark;
+}

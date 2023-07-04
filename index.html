@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Jost:wght@300;400;600&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Manage landing page</title>
+  </head>
+  <body class="container">
+    <header class="header">
+      <img src="/images/logo.svg" alt="manage landing page logo" />
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li>
+            <a href="#">Pricing</a>
+          </li>
+          <li>
+            <a href="#">Product</a>
+          </li>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <a href="#">Careers</a>
+          </li>
+          <li>
+            <a href="#">Community</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-cta btn-cta--1">Get Started</button>
+    </header>
+    <section class="hero">
+      <div class="hero__intro">
+        <h1 class="heading-1">
+          Bring everyone together to build better products.
+        </h1>
+        <p class="text text-1">
+          Manage makes it simple for software teams to plan day-to-day tasks
+          while keeping the larger team goals in view.
+        </p>
+        <button class="btn-cta">Get Started</button>
+      </div>
+      <img class="hero-img" src="images/illustration-intro.svg" alt="" />
+    </section>
+    <section class="features">
+      <div class="features__ntro">
+        <h2 class="heading-2">What`s different about Manage?</h2>
+        <p class="text text-1">
+          Manage provides all the functionality your team needs, without the
+          complexity. Our software is tailor-made for modern digital product
+          teams.
+        </p>
+      </div>
+      <div class="features__details">
+        <div class="features__item">
+          <div class="">01</div>
+          <h3 class="heading-3">Track company-wide progress</h3>
+          <p class="text features__text">
+            See how your day-to-day tasks fit into the wider vision. Go from
+            tracking progress at the milestone level all the way done to the
+            smallest of details. Never lose sight of the bigger picture again.
+          </p>
+        </div>
+        <div class="features__item">
+          <div class="">02</div>
+          <h3 class="heading-3">Advanced built-in reports</h3>
+          <p class="text features__text">
+            Set internal delivery estimates and track progress toward company
+            goals. Our customisable dashboard helps you build out the reports
+            you need to keep key stakeholders informed.
+          </p>
+        </div>
+        <div class="features__item">
+          <div class="">03</div>
+          <h3 class="heading-3">Everything you need in one place</h3>
+          <p class="text features__text">
+            Stop jumping from one service to another to communicate, store
+            files, track tasks and share documents. Manage offers an all-in-one
+            team productivity solution.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <h2 class="heading-2">What they`ve said</h2>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonials__card">
+              <img
+                class="testimonials__image"
+                src="/images/avatar-anisha.png"
+                alt="Anisha Li testimonial"
+              />
+
+              <h4>Anisha Li</h4>
+              <blockquote>
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </blockquote>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonials__card">
+              <img
+                class="testimonials__image"
+                src="/images/avatar-ali.png"
+                alt="Ali Bravo testimonial"
+              />
+
+              <h4>Ali Bravo</h4>
+              <blockquote>
+                “We have been able to cancel so many other subscriptions since
+                using Manage. There is no more cross-channel confusion and
+                everyone is much more focused.”
+              </blockquote>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonials__card">
+              <img
+                class="testimonials__image"
+                src="/images/avatar-richard.png"
+                alt="Richard Watts testimonial"
+              />
+
+              <h4>Richard Watts</h4>
+              <blockquote>
+                “Manage allows us to provide structure and process. It keeps us
+                organized and focused. I can’t stop recommending them to
+                everyone I talk to!”
+              </blockquote>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonials__card">
+              <div class="avatar">
+                <img
+                  class="testimonials__image"
+                  src="/images/avatar-shanai.png"
+                  alt="Shanai Gough testimonial"
+                />
+              </div>
+
+              <h4>Shanai Gough</h4>
+              <blockquote>
+                “Their software allows us to track, manage and collaborate on
+                our projects from anywhere. It keeps the whole team in-sync
+                without being intrusive.”
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <button class="btn-cta">Get started</button>
+    </section>
+    <section class="cta">
+      <div class="cta__container">
+        <h2 class="heading-2">
+          <span>Simplify how your team </span>
+          <span>works today.</span>
+        </h2>
+        <button class="btn-cta btn-cta-reversed">Get started</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__social">
+          <img
+            src="/images/logo-white.svg"
+            alt="manage landing page logo"
+            class="logo"
+          />
+          <ul class="footer__socials">
+            <li class="footer__socials-links">
+              <a href="#"
+                ><img
+                  class="facebook"
+                  src="./images/icon-facebook.svg"
+                  alt="facebook icon"
+              /></a>
+            </li>
+            <li class="footer__socials-links">
+              <a href="#"
+                ><img
+                  src="./images/icon-youtube.svg"
+                  alt="youtube icon"
+                  class="size"
+              /></a>
+            </li>
+            <li class="footer__socials-links">
+              <a href="#"
+                ><img
+                  src="./images/icon-twitter.svg"
+                  alt="twitter icon"
+                  class="size"
+              /></a>
+            </li>
+            <li class="footer__socials-links">
+              <a href=""
+                ><img src="./images/icon-pinterest.svg" alt="pinterest icon"
+              /></a>
+            </li>
+            <li class="footer__socials-links">
+              <a href=""
+                ><img
+                  src="./images/icon-instagram.svg"
+                  alt="instagram icon"
+                  class="size"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer__links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+
+        <ul class="footer__links">
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+
+        <div class="footer__copyright">
+          <form class="form">
+            <input
+              class="email"
+              type="email"
+              id="email"
+              placeholder="Updates in your inbox..."
+            />
+            <button type="submit" class="btn-submit">Go</button>
+          </form>
+
+          <p class="copyright">Copyright 2020. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>

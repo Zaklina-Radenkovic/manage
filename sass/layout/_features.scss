@@ -1,0 +1,29 @@
+.features {
+  grid-column: center-start / center-end;
+
+  padding-top: 10rem;
+
+  @include grid;
+  align-items: start;
+
+  &__item {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 2rem;
+  }
+
+  &__item > div {
+    background-color: $color-primary;
+    color: $color-light-gray;
+    padding: 1rem 2rem;
+    border-radius: 3.2rem;
+
+    grid-row: 1 / span 2;
+    align-self: start;
+  }
+
+  &__text {
+    padding-top: 2rem;
+    font-size: 1.4rem;
+  }
+}

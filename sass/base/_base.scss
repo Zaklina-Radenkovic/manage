@@ -1,0 +1,94 @@
+//COLOR VARIABLES
+$color-primary: hsl(12, 88%, 59%);
+$color-primary-dark: hsl(228, 39%, 23%);
+
+$color-grayish-blue-dark: hsl(227, 12%, 61%);
+$color-dark-blue: hsl(233, 12%, 13%);
+$color-pale-red: hsl(13, 100%, 96%);
+$color-light-gray: hsl(0, 0%, 98%);
+
+//FONT VARIABLES
+$font-primary: "Be Vietnam Pro", sans-serif;
+
+//RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px 10/16=0.625
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-grayish-blue-dark;
+  line-height: 1.6;
+  max-width: 144rem;
+}
+
+.container {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(/images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: top -8% right -10%;
+    width: 100%;
+    height: 100%;
+    background-size: 50%;
+  }
+
+  &::after {
+    content: "";
+    background-image: url(/images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 40% left -55%;
+    background-size: 50%;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  display: grid;
+  // grid-template-rows: min-content auto 40vw repeat(2, min-content) 10vw;
+  grid-template-columns:
+    [full-start]
+    minmax(16.3rem, 1fr)
+    [center-start] repeat(6, [col-start] minmax(min-content, 18.5rem) [col-end])
+    [center-end]
+    minmax(16.3rem, 1fr)
+    [full-end];
+
+  padding-top: 4rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    grid-template-columns:
+      [full-start]
+      minmax(14rem, 1fr)
+      [center-start] repeat(
+        6,
+        [col-start] minmax(min-content, 18.5rem) [col-end]
+      )
+      [center-end]
+      minmax(14rem, 1fr)
+      [full-end];
+  }
+}

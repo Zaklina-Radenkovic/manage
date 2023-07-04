@@ -1,0 +1,112 @@
+.footer {
+  background-color: $color-dark-blue;
+  grid-column: full-start / full-end;
+
+  font-size: 1.2rem;
+
+  &__container {
+    padding: 4.5rem 16rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .logo {
+      width: fit-content;
+
+      @media only screen and (max-width: $bp-largest) {
+        width: 50%;
+      }
+    }
+  }
+
+  &__socials {
+    list-style: none;
+    display: flex;
+
+    img {
+      @media only screen and (max-width: $bp-largest) {
+        width: 80%;
+      }
+    }
+  }
+
+  &__socials-links:not(:last-child) {
+    padding-right: 1.2rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      padding-right: 1rem;
+    }
+  }
+
+  &__socials-links:hover {
+    filter: invert(50%) sepia(24%) saturate(6692%) hue-rotate(337deg)
+      brightness(100%) contrast(103%);
+  }
+
+  &__links {
+    list-style: none;
+
+    li:not(:last-child) {
+      padding-bottom: 2rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-light-gray;
+
+      @media only screen and (max-width: $bp-large) {
+        font-size: 1.5rem;
+      }
+    }
+
+    a:hover {
+      color: $color-primary;
+      cursor: pointer;
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .form {
+      display: flex;
+      justify-content: space-between;
+
+      transform: translate(-1.8rem, 0);
+    }
+
+    .btn-submit,
+    .btn-submit:link,
+    .btn-submit:visited {
+      background-color: $color-primary;
+      color: $color-light-gray;
+      padding: 0 2.3rem;
+      border: none;
+      border-radius: 3.2rem;
+      margin-left: 8px;
+      cursor: pointer;
+    }
+
+    .btn-submit:hover,
+    .btn-submit:active {
+      background-color: lighten($color-primary, 10%);
+    }
+  }
+  .copyright {
+    color: $color-grayish-blue-dark;
+    align-self: end;
+    font-size: 1rem;
+
+    // @media only screen and (max-width: $bp-largest) {
+    //   font-size: 1rem;
+    // }
+  }
+}
