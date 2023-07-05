@@ -104,8 +104,12 @@
     <section class="testimonials">
       <h2 class="heading-2">What they`ve said</h2>
 
-      <div class="swiper">
-        <div class="swiper-wrapper">
+      <div class="swiper" id="swiper">
+        <div
+          class="swiper-wrapper"
+          pagination="true"
+          pagination-dynamic-bullets="true"
+        >
           <div class="swiper-slide">
             <div class="testimonials__card">
               <img
@@ -173,7 +177,7 @@
             </div>
           </div>
         </div>
-        <div class="swiper-scrollbar"></div>
+        <!-- <div class="swiper-pagination"></div> -->
       </div>
       <button class="btn-cta">Get started</button>
     </section>
@@ -264,8 +268,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="script.js"></script>

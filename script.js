@@ -1,10 +1,10 @@
-const swiper = new Swiper(".swiper", {
-  slidesPerView: 1,
+const swiper = new Swiper("#swiper", {
+  slidesPerView: 2.3,
   centeredSlides: true,
   spaceBetween: 30,
   speed: 1000,
   autoplay: {
-    delay: 4500,
+    delay: 2500,
     disableOnInteraction: false,
   },
   // Optional parameters
@@ -18,14 +18,14 @@ const swiper = new Swiper(".swiper", {
     clickable: true,
   },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  // // Navigation arrows
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
+  // // And if we need scrollbar
+  // scrollbar: {
+  //   el: ".swiper-scrollbar",
+  // },
 });

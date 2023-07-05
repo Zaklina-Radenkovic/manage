@@ -208,12 +208,13 @@ body {
 .testimonials {
   grid-column: full-start / full-end;
   z-index: 100;
-  padding: 12rem 14rem;
+  padding: 12rem 0;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .testimonials__card {
     background-color: #fafafa;
+    padding-top: 5.5rem;
     font-size: 1.6rem;
     position: relative;
     display: flex;
@@ -228,13 +229,12 @@ body {
     left: 50%;
     transform: translate(-50%, -50%); }
   .testimonials h4 {
-    padding: 4.8rem 0 2.5rem;
+    padding: 0 0 2rem;
     color: #1d1e25; }
   .testimonials blockquote {
-    width: 80%;
+    width: 87%;
     text-align: center;
-    padding-bottom: 4rem;
-    letter-spacing: 0.02em; }
+    padding-bottom: 4rem; }
   .testimonials button {
     align-self: center; }
 
@@ -319,13 +319,14 @@ body {
   color: #9095a7; }
 
 .swiper {
-  width: 60rem;
+  width: 100%;
   height: 30rem; }
 
-.swiper-container {
-  width: 100%;
-  height: 100%;
-  overflow-x: auto; }
+#swiper-1 .swiper-pagination {
+  bottom: 18px; }
+
+#swiper-1 .swiper-pagination-bullet-active {
+  background-color: #f25f3a; }
 
 .swiper-wrapper {
   padding-top: 3rem; }

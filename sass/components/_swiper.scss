@@ -1,13 +1,15 @@
 .swiper {
-  width: 60rem;
+  width: 100%;
   height: 30rem;
 }
-.swiper-container {
-  width: 100%;
-  height: 100%;
-  overflow-x: auto;
+
+#swiper-1 .swiper-pagination {
+  bottom: 18px;
 }
 
+#swiper-1 .swiper-pagination-bullet-active {
+  background-color: $color-primary;
+}
 .swiper-wrapper {
   padding-top: 3rem;
 }
