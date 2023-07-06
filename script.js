@@ -18,6 +18,18 @@ const swiper = new Swiper("#swiper", {
     clickable: true,
   },
 
+  breakpoints: {
+    400: {
+      slidesPerView: 1,
+    },
+    600: {
+      slidesPerView: 2,
+    },
+    800: {
+      slidesPerView: 2.3,
+    },
+  },
+
   // // Navigation arrows
   // navigation: {
   //   nextEl: ".swiper-button-next",

@@ -6,24 +6,62 @@
   @include grid;
   align-items: start;
 
-  &__item {
-    display: grid;
-    grid-template-columns: min-content 1fr;
-    column-gap: 2rem;
+  &__intro {
+    @media only screen and (max-width: $bp-small) {
+      padding-right: 3.5rem;
+    }
   }
 
-  &__item > div {
+  &__detail {
+    display: grid;
+    grid-template-columns: minmax(6rem, 1fr) auto;
+    column-gap: 2.2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      column-gap: 3.5rem;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    grid-column: 1 / span 2;
+
+    @media only screen and (max-width: $bp-small) {
+      background-color: $color-pale-red;
+      border-top-left-radius: 3.2rem;
+      border-bottom-left-radius: 3.2rem;
+    }
+  }
+
+  &__heading > div {
     background-color: $color-primary;
     color: $color-light-gray;
-    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 0.8rem 2.2rem;
     border-radius: 3.2rem;
-
-    grid-row: 1 / span 2;
-    align-self: start;
   }
 
   &__text {
-    padding-top: 2rem;
-    font-size: 1.4rem;
+    padding-top: 1.6rem;
+    padding-bottom: 2.8rem;
+    font-size: 1.6rem;
+
+    grid-column: 2;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-column: 1;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    gap: unset;
+    padding-right: unset;
+    padding-left: 3.5rem;
+    // padding-right: 3.5rem;
+    display: flex;
+    flex-direction: column;
   }
 }

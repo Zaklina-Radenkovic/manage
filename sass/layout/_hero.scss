@@ -8,11 +8,28 @@
   &__intro {
     display: flex;
     flex-direction: column;
+
+    @media only screen and (max-width: $bp-small) {
+      align-items: center;
+    }
   }
 
   &-img {
     width: 100%;
     height: auto;
     transform: translate(0, -30px);
+
+    @media only screen and (max-width: $bp-small) {
+      order: -1;
+      width: 80%;
+      transform: unset;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    gap: unset;
+    padding: 0 3.5rem;
+    display: flex;
+    flex-direction: column;
   }
 }

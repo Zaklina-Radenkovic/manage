@@ -10,6 +10,7 @@
   font-family: inherit;
   font-weight: 700;
   border-radius: 32px;
+  outline: none;
   cursor: pointer;
 
   transition: all 0.2s;
@@ -22,6 +23,15 @@
   &--1 {
     justify-self: center;
   }
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 1.2rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    align-self: center;
+    margin-top: 4.5rem;
+  }
 }
 
 .btn-cta-reversed,
@@ -29,11 +39,12 @@
 .btn-cta-reversed:visited {
   color: $color-primary;
   background: $color-light-gray;
+  cursor: pointer;
   transition: all 0.2s;
 
   &:hover {
     background: $color-light-gray;
     color: lighten($color-primary, 20%);
-    transform: none;
+    // transform: none;
   }
 }

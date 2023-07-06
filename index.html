@@ -27,7 +27,9 @@
   </head>
   <body class="container">
     <header class="header">
-      <img src="/images/logo.svg" alt="manage landing page logo" />
+      <div class="header__logo">
+        <img src="/images/logo.svg" alt="manage landing page logo" />
+      </div>
       <nav class="header__nav">
         <ul class="header__list">
           <li>
@@ -63,7 +65,7 @@
       <img class="hero-img" src="images/illustration-intro.svg" alt="" />
     </section>
     <section class="features">
-      <div class="features__ntro">
+      <div class="features__intro">
         <h2 class="heading-2">What`s different about Manage?</h2>
         <p class="text text-1">
           Manage provides all the functionality your team needs, without the
@@ -72,27 +74,33 @@
         </p>
       </div>
       <div class="features__details">
-        <div class="features__item">
-          <div class="">01</div>
-          <h3 class="heading-3">Track company-wide progress</h3>
+        <div class="features__detail">
+          <div class="features__heading">
+            <div>01</div>
+            <h3 class="heading-3">Track company-wide progress</h3>
+          </div>
           <p class="text features__text">
             See how your day-to-day tasks fit into the wider vision. Go from
             tracking progress at the milestone level all the way done to the
             smallest of details. Never lose sight of the bigger picture again.
           </p>
         </div>
-        <div class="features__item">
-          <div class="">02</div>
-          <h3 class="heading-3">Advanced built-in reports</h3>
+        <div class="features__detail">
+          <div class="features__heading">
+            <div>02</div>
+            <h3 class="heading-3">Advanced built-in reports</h3>
+          </div>
           <p class="text features__text">
             Set internal delivery estimates and track progress toward company
             goals. Our customisable dashboard helps you build out the reports
             you need to keep key stakeholders informed.
           </p>
         </div>
-        <div class="features__item">
-          <div class="">03</div>
-          <h3 class="heading-3">Everything you need in one place</h3>
+        <div class="features__detail">
+          <div class="features__heading">
+            <div>03</div>
+            <h3 class="heading-3">Everything you need in one place</h3>
+          </div>
           <p class="text features__text">
             Stop jumping from one service to another to communicate, store
             files, track tasks and share documents. Manage offers an all-in-one
@@ -177,96 +185,91 @@
             </div>
           </div>
         </div>
-        <!-- <div class="swiper-pagination"></div> -->
+        <div class="swiper-pagination"></div>
       </div>
       <button class="btn-cta">Get started</button>
     </section>
     <section class="cta">
-      <div class="cta__container">
-        <h2 class="heading-2">
-          <span>Simplify how your team </span>
-          <span>works today.</span>
-        </h2>
-        <button class="btn-cta btn-cta-reversed">Get started</button>
-      </div>
+      <h2 class="heading-2">
+        <span>Simplify how your team </span>
+        <span>works today.</span>
+      </h2>
+      <button class="btn-cta btn-cta-reversed">Get started</button>
     </section>
 
     <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__social">
-          <img
-            src="/images/logo-white.svg"
-            alt="manage landing page logo"
-            class="logo"
-          />
-          <ul class="footer__socials">
-            <li class="footer__socials-links">
-              <a href="#"
-                ><img
-                  class="facebook"
-                  src="./images/icon-facebook.svg"
-                  alt="facebook icon"
-              /></a>
-            </li>
-            <li class="footer__socials-links">
-              <a href="#"
-                ><img
-                  src="./images/icon-youtube.svg"
-                  alt="youtube icon"
-                  class="size"
-              /></a>
-            </li>
-            <li class="footer__socials-links">
-              <a href="#"
-                ><img
-                  src="./images/icon-twitter.svg"
-                  alt="twitter icon"
-                  class="size"
-              /></a>
-            </li>
-            <li class="footer__socials-links">
-              <a href=""
-                ><img src="./images/icon-pinterest.svg" alt="pinterest icon"
-              /></a>
-            </li>
-            <li class="footer__socials-links">
-              <a href=""
-                ><img
-                  src="./images/icon-instagram.svg"
-                  alt="instagram icon"
-                  class="size"
-              /></a>
-            </li>
-          </ul>
-        </div>
-
-        <ul class="footer__links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">About Us</a></li>
+      <div class="footer__social">
+        <img
+          src="/images/logo-white.svg"
+          alt="manage landing page logo"
+          class="logo"
+        />
+        <ul class="footer__socials">
+          <li class="footer__socials-links">
+            <a href="#"
+              ><img
+                class="facebook"
+                src="./images/icon-facebook.svg"
+                alt="facebook icon"
+            /></a>
+          </li>
+          <li class="footer__socials-links">
+            <a href="#"
+              ><img
+                src="./images/icon-youtube.svg"
+                alt="youtube icon"
+                class="size"
+            /></a>
+          </li>
+          <li class="footer__socials-links">
+            <a href="#"
+              ><img
+                src="./images/icon-twitter.svg"
+                alt="twitter icon"
+                class="size"
+            /></a>
+          </li>
+          <li class="footer__socials-links">
+            <a href=""
+              ><img src="./images/icon-pinterest.svg" alt="pinterest icon"
+            /></a>
+          </li>
+          <li class="footer__socials-links">
+            <a href=""
+              ><img
+                src="./images/icon-instagram.svg"
+                alt="instagram icon"
+                class="size"
+            /></a>
+          </li>
         </ul>
-
-        <ul class="footer__links">
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Community</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-        </ul>
-
-        <div class="footer__copyright">
-          <form class="form">
-            <input
-              class="email"
-              type="email"
-              id="email"
-              placeholder="Updates in your inbox..."
-            />
-            <button type="submit" class="btn-submit">Go</button>
-          </form>
-
-          <p class="copyright">Copyright 2020. All Rights Reserved</p>
-        </div>
       </div>
+
+      <ul class="footer__links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+
+      <ul class="footer__links">
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+
+      <div class="footer__copyright">
+        <form class="form">
+          <input
+            class="email"
+            type="email"
+            id="email"
+            placeholder="Updates in your inbox..."
+          />
+          <button type="submit" class="btn-submit">Go</button>
+        </form>
+      </div>
+      <p class="copyright">Copyright 2020. All Rights Reserved</p>
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

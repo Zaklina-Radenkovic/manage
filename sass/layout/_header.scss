@@ -5,14 +5,30 @@
   justify-content: space-between;
   align-items: center;
 
+  &__logo {
+    width: 14.7rem;
+  }
+
+  img {
+    width: 100%;
+  }
+
   &__nav {
     display: flex;
+
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
   }
 
   &__list {
     list-style: none;
     display: flex;
     font-size: 1.4rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.4rem;
+    }
   }
 
   &__list li:not(:last-child) {
@@ -29,5 +45,17 @@
   &__list a:hover,
   &__list a:active {
     color: $color-grayish-blue-dark;
+  }
+
+  .btn-cta--1 {
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    gap: unset;
+
+    display: flex;
   }
 }
