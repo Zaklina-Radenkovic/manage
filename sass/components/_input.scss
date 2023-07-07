@@ -1,12 +1,12 @@
 .email {
-  background-color: $color-light-gray;
+  font-family: inherit;
+  font-size: inherit;
   padding: 1.2rem 1.6rem;
   color: $color-primary;
+  background-color: $color-light-gray;
   border: 1px solid $color-light-gray;
   border-radius: 32rem;
   outline: none;
-  font-family: inherit;
-  font-size: inherit;
 
   @media only screen and (max-width: $bp-largest) {
     font-size: 1rem;
@@ -21,9 +21,9 @@
   }
 
   @media only screen and (max-width: $bp-small) {
+    font-size: 1.2rem;
     width: 100%;
     padding: 1.2rem 1.6rem;
-    font-size: 1.2rem;
   }
 }
 

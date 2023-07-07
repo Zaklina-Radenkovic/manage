@@ -1,16 +1,9 @@
 .features {
   grid-column: center-start / center-end;
-
   padding-top: 10rem;
 
   @include grid;
   align-items: start;
-
-  &__intro {
-    @media only screen and (max-width: $bp-small) {
-      padding-right: 3.5rem;
-    }
-  }
 
   &__detail {
     display: grid;
@@ -18,49 +11,56 @@
     column-gap: 2.2rem;
 
     @media only screen and (max-width: $bp-small) {
-      column-gap: 3.5rem;
+      column-gap: unset;
     }
   }
 
   &__heading {
+    grid-column: 1 / span 2;
+
     display: flex;
     align-items: center;
     gap: 2rem;
-    grid-column: 1 / span 2;
 
     @media only screen and (max-width: $bp-small) {
       background-color: $color-pale-red;
       border-top-left-radius: 3.2rem;
       border-bottom-left-radius: 3.2rem;
+      margin-right: -3.5rem;
     }
   }
 
   &__heading > div {
-    background-color: $color-primary;
-    color: $color-light-gray;
     font-size: 1.4rem;
     font-weight: 700;
     padding: 0.8rem 2.2rem;
+    color: $color-light-gray;
+    background-color: $color-primary;
     border-radius: 3.2rem;
   }
 
   &__text {
+    grid-column: 2;
+
+    font-size: 1.6rem;
     padding-top: 1.6rem;
     padding-bottom: 2.8rem;
-    font-size: 1.6rem;
 
-    grid-column: 2;
+    @media only screen and (max-width: $bp-large) {
+      font-size: 1.8rem;
+    }
 
     @media only screen and (max-width: $bp-small) {
       grid-column: 1;
+      font-size: 1.6rem;
     }
   }
 
   @media only screen and (max-width: $bp-small) {
+    grid-column: full-start / full-end;
+    padding: 10rem 3.5rem 8rem;
     gap: unset;
-    padding-right: unset;
-    padding-left: 3.5rem;
-    // padding-right: 3.5rem;
+
     display: flex;
     flex-direction: column;
   }

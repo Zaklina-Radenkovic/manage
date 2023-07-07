@@ -30,7 +30,6 @@
 
   @media only screen and (max-width: $bp-small) {
     align-self: center;
-    margin-top: 4.5rem;
   }
 }
 
@@ -45,6 +44,5 @@
   &:hover {
     background: $color-light-gray;
     color: lighten($color-primary, 20%);
-    // transform: none;
   }
 }

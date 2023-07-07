@@ -1,5 +1,6 @@
 .cta {
   grid-column: full-start / full-end;
+  padding: 4.5rem 0;
 
   display: grid;
   grid-template-columns:
@@ -11,11 +12,9 @@
   background-position: bottom 0 left 270px;
   background-size: 90%;
   background-color: $color-primary;
-  padding: 4.5rem 0;
 
   h2 {
     padding: 0;
-
     grid-column: 2 / span 3;
 
     @media only screen and (max-width: $bp-medium) {
@@ -23,7 +22,7 @@
     }
 
     @media only screen and (max-width: $bp-small) {
-      font-size: 4rem;
+      font-size: 3.6rem;
     }
   }
 
@@ -44,6 +43,10 @@
 
     @media only screen and (max-width: $bp-medium) {
       grid-column: 5;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 3rem;
     }
   }
 
@@ -66,9 +69,13 @@
   }
 
   @media only screen and (max-width: $bp-small) {
+    padding: 10rem 3.5rem 9rem;
     display: flex;
     flex-direction: column;
 
-    padding: 10rem 3.5rem 9rem;
+    background-image: url(/images/bg-simplify-section-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 30% left 0;
+    background-size: 30%;
   }
 }
