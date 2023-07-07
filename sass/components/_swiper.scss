@@ -1,15 +1,11 @@
 .swiper {
   width: 100%;
   height: 30rem;
-
-  // @media only screen and (max-width: $bp-small) {
-  //   width: 80%;
-  // }
 }
 
 #swiper .swiper-pagination-bullets {
-  // bottom: 25px;
   display: none;
+
   @media only screen and (max-width: $bp-small) {
     display: block;
   }
@@ -18,6 +14,7 @@
 #swiper .swiper-pagination-bullet-active {
   background-color: $color-primary;
 }
+
 .swiper-wrapper {
   padding-top: 3rem;
 }
