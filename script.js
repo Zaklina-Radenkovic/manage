@@ -19,6 +19,9 @@ const swiper = new Swiper("#swiper", {
   },
 
   breakpoints: {
+    200: {
+      slidesPerView: 0.8,
+    },
     400: {
       slidesPerView: 1,
     },
@@ -29,15 +32,23 @@ const swiper = new Swiper("#swiper", {
       slidesPerView: 2.3,
     },
   },
+});
 
-  // // Navigation arrows
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
+const hamburgerBtn = document.querySelector(".icon-hamburger");
+const closeBtn = document.querySelector(".icon-close");
+const mobileNav = document.querySelector(".header__nav");
+const backdrop = document.querySelector(".backdrop");
 
-  // // And if we need scrollbar
-  // scrollbar: {
-  //   el: ".swiper-scrollbar",
-  // },
+hamburgerBtn.addEventListener("click", function () {
+  this.style.display = "none";
+  backdrop.style.display = "block";
+  mobileNav.style.display = "block";
+  closeBtn.style.display = "block";
+});
+
+closeBtn.addEventListener("click", function () {
+  mobileNav.style.display = "none";
+  hamburgerBtn.style.display = "block";
+  this.style.display = "none";
+  backdrop.style.display = "none";
 });
