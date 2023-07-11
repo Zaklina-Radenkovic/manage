@@ -492,7 +492,7 @@ body {
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%); }
-  .testimonials h4 {
+  .testimonials h3 {
     padding: 0 0 2rem;
     color: #1d1e25; }
   .testimonials blockquote {
