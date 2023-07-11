@@ -15,7 +15,8 @@
 
   transition: all 0.2s;
 
-  &:hover {
+  &:hover,
+  &:active {
     background: lighten($color-primary, 10%);
     transform: translateY(1px);
   }
@@ -41,7 +42,8 @@
   cursor: pointer;
   transition: all 0.2s;
 
-  &:hover {
+  &:hover,
+  &:active {
     background: $color-light-gray;
     color: lighten($color-primary, 20%);
   }

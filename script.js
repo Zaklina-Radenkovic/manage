@@ -34,6 +34,7 @@ const swiper = new Swiper("#swiper", {
   },
 });
 
+//mobile navigation
 const hamburgerBtn = document.querySelector(".icon-hamburger");
 const closeBtn = document.querySelector(".icon-close");
 const mobileNav = document.querySelector(".header__nav");
@@ -52,3 +53,33 @@ closeBtn.addEventListener("click", function () {
   this.style.display = "none";
   backdrop.style.display = "none";
 });
+
+//form submitting
+const form = document.querySelector("form");
+const email = document.getElementById("email");
+const emailError = document.querySelector(".error");
+
+email.addEventListener("input", (event) => {
+  if (email.validity.valid) {
+    emailError.textContent = "";
+    emailError.className = "error";
+  } else {
+    showError();
+  }
+});
+
+form.addEventListener("submit", (event) => {
+  if (!email.validity.valid) {
+    showError();
+
+    event.preventDefault();
+  }
+});
+
+function showError() {
+  if (email.validity.typeMismatch) {
+    emailError.textContent = "Please insert a valid email";
+
+    emailError.className = "error active";
+  }
+}

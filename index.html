@@ -265,15 +265,19 @@
       </ul>
 
       <div class="footer__copyright">
-        <form class="form">
+        <form class="form" novalidate>
           <input
             class="email"
             type="email"
             id="email"
+            name="email"
+            required
+            minlength="8"
             placeholder="Updates in your inbox..."
           />
-          <button type="submit" class="btn-submit">Go</button>
+          <button class="btn-submit">Go</button>
         </form>
+        <p class="error"></p>
       </div>
       <p class="copyright">Copyright 2020. All Rights Reserved</p>
     </footer>

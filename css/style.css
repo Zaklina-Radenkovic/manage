@@ -586,9 +586,11 @@ body {
   outline: none;
   cursor: pointer;
   transition: all 0.2s; }
-  .btn-cta:hover,
+  .btn-cta:hover, .btn-cta:active,
   .btn-cta:link:hover,
-  .btn-cta:visited:hover {
+  .btn-cta:link:active,
+  .btn-cta:visited:hover,
+  .btn-cta:visited:active {
     background: #f6866a;
     transform: translateY(1px); }
   .btn-cta--1,
@@ -613,39 +615,46 @@ body {
   background: #fafafa;
   cursor: pointer;
   transition: all 0.2s; }
-  .btn-cta-reversed:hover,
+  .btn-cta-reversed:hover, .btn-cta-reversed:active,
   .btn-cta-reversed:link:hover,
-  .btn-cta-reversed:visited:hover {
+  .btn-cta-reversed:link:active,
+  .btn-cta-reversed:visited:hover,
+  .btn-cta-reversed:visited:active {
     background: #fafafa;
     color: #f9ad9a; }
 
-.email {
+input[type="email"] {
   font-family: inherit;
-  font-size: inherit;
+  font-size: 1.2rem;
   padding: 1.2rem 1.6rem;
   color: #f25f3a;
   background-color: #fafafa;
   border: 1px solid #fafafa;
-  border-radius: 32rem;
-  outline: none; }
+  border-radius: 32rem; }
+  input[type="email"]:focus {
+    outline: none;
+    border: 1px solid #f25f3a; }
+  input[type="email"]:focus:invalid {
+    outline: none; }
   @media only screen and (max-width: 75em) {
-    .email {
+    input[type="email"] {
       font-size: 1rem; } }
   @media only screen and (max-width: 75em) {
-    .email {
+    input[type="email"] {
       padding: 1rem 1.2rem; } }
   @media only screen and (max-width: 50em) {
-    .email {
+    input[type="email"] {
       padding: 0.8rem 0.4rem; } }
   @media only screen and (max-width: 37.5em) {
-    .email {
+    input[type="email"] {
       font-size: 1.2rem;
       width: 100%;
       padding: 1.2rem 1.6rem; } }
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #9095a7; }
+  color: #9095a7;
+  font-size: 1.2rem; }
   @media only screen and (max-width: 50em) {
     ::placeholder {
       visibility: hidden; } }
@@ -656,6 +665,16 @@ body {
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #9095a7; }
+
+.error {
+  color: #f25f3a;
+  margin-bottom: 80px;
+  width: 100%;
+  padding: 0;
+  font-size: 80%; }
+
+.error.active {
+  padding: 0.5em 1.6rem; }
 
 .swiper {
   width: 100%;
