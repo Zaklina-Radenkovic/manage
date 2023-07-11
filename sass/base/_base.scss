@@ -60,7 +60,7 @@ body {
   &::before {
     content: "";
     position: absolute;
-    background-image: url(/images/bg-tablet-pattern.svg);
+    background-image: url(../images/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
     background-position: top -8% right -10%;
     width: 100%;
@@ -82,7 +82,7 @@ body {
   &::after {
     content: "";
     position: absolute;
-    background-image: url(/images/bg-tablet-pattern.svg);
+    background-image: url(../images/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
     background-position: bottom 40% left -70%;
     background-size: 55%;
