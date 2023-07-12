@@ -1,5 +1,5 @@
 const swiper = new Swiper("#swiper", {
-  slidesPerView: 2.3,
+  // slidesPerView: 3,
   centeredSlides: true,
   spaceBetween: 30,
   speed: 1000,
@@ -29,7 +29,16 @@ const swiper = new Swiper("#swiper", {
       slidesPerView: 2,
     },
     800: {
-      slidesPerView: 2.3,
+      slidesPerView: 3,
+    },
+    900: {
+      slidesPerView: 3.2,
+    },
+    1000: {
+      slidesPerView: 2.1,
+    },
+    1200: {
+      slidesPerView: 2.32,
     },
   },
 });
